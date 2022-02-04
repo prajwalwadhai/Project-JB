@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    position: sticky;
+    font-family: 'Vujahday Script', cursive;
+    display: flex;
+    /* background-color: rgb(110, 101, 101); */
+
+    padding: 10px;
+    align-items: center;
+    /* border-radius: 20px; */
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0%;
+    height:100%;
+    width:100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+#navbar img{
+    height: 50px;
+    width: 50px;
+    top: 30px;
+    left: 20px ;
+}
+
+#navbar ul{
+    display: flex;
+    padding: 10px;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a {
+    text-decoration: none;
+    margin: 5px 79px;
+    /* padding: 2px 22px; */
+
+    color: white;
+    font-size: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Home section */
+#home{
+    /* border: 3px solid black; */
+    display: flex;
+    text-align: justify;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 490px;
+    /* padding: 2px 5px; */
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 575px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    font-family: 'Vujahday Script', cursive;
+    font-size: 60px;
+    margin: 20px ;
+}
+#home p{
+    font-family: 'Vujahday Script', cursive;
+    font-size: 22px;
+}
+#home button{
+    font-family: 'Vujahday Script', cursive;
+    font-size: 20px;
+    border-radius: 11px;
+    height: 50px;
+    width: 147px;
+    margin: 20px;
+    background-color: rgb(181 75 75);
+    border: 2px solid white;
+}
+#home button:hover{
+    cursor: pointer;
+}
+
+
+/* Utility classes */
+.h-primary{
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 10px ;
+}
+
+
+/* Servics Section */
+#Services{
+    display: flex;
+}
+#Service-Container{
+    font-family: 'Luxurious Roman', cursive;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    border: 3px solid rgb(117, 40, 40);
+    border-radius: 20px ;
+    width: 400px;
+    margin: 40px;
+    padding: 20px ;
+    height: 500px ;
+
+    text-align: center;
+}
+.h-secondary{
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 35px;
+
+}
+section div p{
+    font-size: 20px;
+}
+
+section div img{
+    height: 190px;
+    width: 240px;
+}
+
+
+/* Client Section */
+#clients{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg');
+    height: 103%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity:0.8;
+}
+/* section div img{
+} */
+#clients img{
+    height: 128px;
+    width: 149px;
+    margin: 43px;
+}
+
+
+/* Contact Us section */
+#contact{
+    position: relative;
+    /* border: 3px solid black ; */
+    padding: 0%;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../contact.jpg')no-repeat center center/cover;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.contact-box{
+    display: flex;
+    text-align: center;
+    height: 490px;
+    /* width: 800px; */
+    justify-content: center;
+    align-items: center;
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form-group{
+    font-family: 'Luxurious Roman', cursive;
+    margin: 20px;
+    font-size: 20px;
+}
+.form-group input{
+    border: 3px solid black;
+    border-radius: 8px;
+    color: black;
+    height: 30px;
+    width: 600px;
+
+}
+.form-group label{
+    display: block;
+    text-align: left ;
+}
+.form-group input{
+    font-size: 17px;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+}
+.center{
+    text-align: center;
+}
